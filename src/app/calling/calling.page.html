@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>¿A quien llamamos?</ion-title>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <a href="tel:{{user?.userPhone}}" class="btn"> {{user?.userName}} </a>
+</ion-content>
+
+<ion-content>
+  <a href="tel:911" class="btn">Policia</a>
+</ion-content>
+
+<ion-content>
+  <a href="tel:911" class="btn">Ambulancia</a>
+</ion-content>
+
+<ion-content>
+  <a href="tel:911" class="btn">Bomberos</a>
+</ion-content>
+
+<ion-content>
+
+  <div id="container">
+  <button ion-button [routerLink]="['/home']" class="btn">Volver</button>
+  </div>
+</ion-content>
+
